@@ -92,7 +92,7 @@ Organizar e analisar os dados de PIB dos municípios brasileiros (2010–2023) p
 
 ---
 
-**Aprovado por:** *[Preencher — normalmente o professor, na correção]*
+**Aprovado por:** *Edilberto Silva*
 **Data de Aprovação:** *17/09/2026*
 
 Prof. Edilberto Silva
