@@ -4,6 +4,7 @@
 
 **Projeto:** Análise do PIB dos Municípios Brasileiros (2010–2023)
 **Grupo:** grupo03 — PIB Municípios
+**Localização dos Arquivos:** https://github.com/DanielNego/projeto-bi-pib-municipios/blob/main/docs/crisp-dm/01-business-understanding.md
 **Repositório GitHub:** https://github.com/DanielNego/projeto-bi-pib-municipios.git
 **Data:** *17/09/2026*
 **Última Atualização:** *17/09/2026*
