@@ -71,8 +71,8 @@ projeto-bi-pib-municipios/
 ## 📌 Fases do projeto
 
 - [x] Fase 0 — Perguntas-chave (`docs/crisp-dm/00-perguntas-chave.md`)
-- [ ] Fase 1 — Entendimento do negócio
-- [ ] Fase 2 — Entendimento dos dados
+- [x] Fase 1 — Entendimento do negócio
+- [x] Fase 2 — Entendimento dos dados (notebook no Google Colab)
 - [ ] Fase 3 — Preparação dos dados
 - [ ] Fase 4 — Modelagem
 - [ ] Fase 5 — Avaliação
