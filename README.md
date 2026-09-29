@@ -80,7 +80,7 @@ projeto-bi-pib-municipios/
 
 ## ▶️ Como abrir a análise
 
-1. Acesse o notebook no Google Colab: [ajuste: link do Colab].
+1. Acesse o notebook no Google Colab: [https://colab.research.google.com/drive/1LsZc_c7JuvVfpjBTMQSry8O2R0_90QPE?usp=sharing].
 2. Envie a base do IBGE para o Colab (ou para o Google Drive), no local indicado no notebook.
 3. Execute as células em ordem (Ambiente de execução → Executar tudo).
 
