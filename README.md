@@ -11,7 +11,6 @@
 | 1 | Daniel Reis Rodrigues | Scrum Master / BI Lead / Analista de Dados | danielreisrodrigues15@gmail.com |
 | 2 | Caio Nunes Lima | Engenheiro de Dados / Desenvolvedor Power BI | caionunes123@gmail.com |
 
-> **Observação:** a equipe do projeto é formada por apenas 2 integrantes. Por isso, os papéis do modelo original foram agrupados entre os dois membros, em vez de manter uma equipe de 6 pessoas.
 
 **Ambos os integrantes devem compreender:**
 
