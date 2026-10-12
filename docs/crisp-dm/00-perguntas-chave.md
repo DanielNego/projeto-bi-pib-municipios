@@ -11,7 +11,6 @@
 | 1 | Daniel Reis Rodrigues | Scrum Master / BI Lead / Analista de Dados | danielreisrodrigues15@gmail.com |
 | 2 | Caio Nunes Lima | Engenheiro de Dados / Desenvolvedor Power BI | caionunes123@gmail.com |
 
-> **Observação:** a equipe do projeto é formada por apenas 2 integrantes. Por isso, os papéis do modelo original foram agrupados entre os dois membros, em vez de manter uma equipe de 6 pessoas.
 
 **Ambos os integrantes devem compreender:**
 
@@ -34,7 +33,7 @@ Projeto de Business Intelligence que utiliza a base de dados do IBGE sobre o PIB
 Prof. Edilberto Silva (professor da disciplina Laboratório de Inovação IV, responsável pela avaliação do projeto).
 
 **Período de Execução:**
-**
+*[Preencher com a data de início e a data de entrega definidas pela disciplina]*
 
 ---
 
@@ -172,10 +171,11 @@ Período coberto: 2010 a 2023
 
 ### Repositório GitHub
 
-URL Principal: *https://github.com/DanielNego/projeto-bi-pib-municipios.git*
+URL Principal: https://github.com/DanielNego/projeto-bi-pib-municipios.git
 Proprietário: Daniel Reis Rodrigues e Caio Nunes Lima
 Visibilidade: Público
 
+**Observação:** o modelo original do professor traz uma estrutura pensada para um projeto empresarial grande (com pastas de ETL, pipelines Python, Docker, testes automatizados etc.). Como somos uma equipe de 2 pessoas e o projeto usa uma única base de dados (IBGE), adaptamos para uma estrutura mais simples, que será expandida apenas conforme for necessário nas próximas fases:
 
 ```
 projeto-bi-pib-municipios/
@@ -183,14 +183,29 @@ projeto-bi-pib-municipios/
 ├── README.md                          ← Apresentação do projeto
 │
 ├── docs/
-│   └── crisp-dm/
-│       ├── 00-perguntas-chave.md      ← Este arquivo (Fase 0)
-│       ├── 01-business-understanding.md   ← Fase 1
-│       ├── 02-data-understanding.md       ← Fase 2
-│       ├── 03-data-preparation.md         ← Fase 3
-│       ├── 04-modeling.md                 ← Fase 4
-│       ├── 05-evaluation.md               ← Fase 5
-│       └── 06-deployment.md               ← Fase 6
+│   ├── crisp-dm/
+│   │   ├── 00-perguntas-chave.md      ← Este arquivo (Fase 0)
+│   │   ├── 01-business-understanding.md   ← Fase 1
+│   │   ├── 02-data-understanding.md       ← Fase 2 (documento)
+│   │   ├── 02-data-understanding.ipynb    ← Fase 2 (notebook do Colab, com as saídas)
+│   │   ├── 03-data-preparation.md         ← Fase 3
+│   │   ├── 04-modeling.md                 ← Fase 4
+│   │   ├── 05-evaluation.md               ← Fase 5
+│   │   └── 06-deployment.md               ← Fase 6
+│   │
+│   ├── arquitetura/
+│   │   ├── 02_criar_tabelas_mysql.png     ← Modelo multidimensional (PNG exportado do MySQL Workbench)
+│   │   └── 02_criar_tabelas_mysql.mwb     ← Modelo multidimensional (arquivo do MySQL Workbench)
+│   │
+│   └── imagens/
+│       ├── pib-medio-por-regiao.png       ← Gráficos usados no README
+│       ├── top10-municipios-pib-2023.png
+│       └── percentual-municipios-por-regiao.png
+│
+├── database/
+│   └── ddl/
+│       ├── 01-criar-tabelas.sql           ← Script DDL (SQL padrão)
+│       └── 02-criar-tabelas-mysql.sql     ← Script DDL para o MySQL Workbench
 │
 ├── dados/
 │   └── PIB dos Municípios - base de dados 2010-2023.xlsx
@@ -199,7 +214,7 @@ projeto-bi-pib-municipios/
     └── projeto-pib-municipios.pbix    ← Adicionado quando o dashboard estiver pronto
 ```
 
-Novas pastas (por exemplo, para scripts de tratamento de dados) serão criadas somente quando forem realmente utilizadas.
+As pastas `database/ddl/`, `docs/arquitetura/` e `docs/imagens/` foram acrescentadas na Fase 2, para o script DDL, o modelo multidimensional e os gráficos do README. Novas pastas (por exemplo, para scripts de tratamento de dados) serão criadas somente quando forem realmente utilizadas.
 
 ---
 
@@ -240,10 +255,6 @@ Objetivo: comparar o PIB das cinco grandes regiões brasileiras (Norte, Nordeste
 1. ✅ Planejar a **Fase 1:** `01-business-understanding.md` (100%)
 
 ---
-
-**Documento Criado:** 
-**Versão:** 1.0
-**Status:**
 
 *"Bom BI começa com perguntas certas!"* 🎯
 
