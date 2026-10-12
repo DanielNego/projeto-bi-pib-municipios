@@ -28,7 +28,7 @@ O objetivo deste projeto é analisar como o PIB dos municípios brasileiros evol
 
 Valores em reais correntes (sem descontar a inflação). Os gráficos foram feitos com a base do IBGE na Fase 2.
 
-![PIB médio dos municípios por região](docs/imagens/pib-medio-por-regiao.png)
+![PIB médio dos municípios por região](docs/imagens/pib_medio_por_regiao.png)
 
 ![Top 10 municípios com maior PIB em 2023](docs/imagens/top10-municipios-pib-2023.png)
 
