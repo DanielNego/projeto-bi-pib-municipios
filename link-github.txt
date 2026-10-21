@@ -1,0 +1,15 @@
+Projeto: Analise do PIB dos Municipios Brasileiros (2010-2023)
+Grupo: grupo03 - PIB Municipios
+Integrantes: Daniel Reis Rodrigues e Caio Nunes Lima
+
+Repositorio GitHub:
+https://github.com/DanielNego/projeto-bi-pib-municipios
+
+Scripts SQL (DDL, cargas das dimensoes e da fato, dumps):
+https://github.com/DanielNego/projeto-bi-pib-municipios/tree/main/database
+
+Scripts Python (importacao, tratamento e carga):
+https://github.com/DanielNego/projeto-bi-pib-municipios/tree/main/python
+
+Fontes de dados (CSV):
+https://github.com/DanielNego/projeto-bi-pib-municipios/tree/main/dados/csv

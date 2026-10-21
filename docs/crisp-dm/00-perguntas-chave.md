@@ -11,6 +11,7 @@
 | 1 | Daniel Reis Rodrigues | Scrum Master / BI Lead / Analista de Dados | danielreisrodrigues15@gmail.com |
 | 2 | Caio Nunes Lima | Engenheiro de Dados / Desenvolvedor Power BI | caionunes123@gmail.com |
 
+> **Observação:** a equipe do projeto é formada por apenas 2 integrantes. Por isso, os papéis do modelo original foram agrupados entre os dois membros, em vez de manter uma equipe de 6 pessoas.
 
 **Ambos os integrantes devem compreender:**
 
@@ -203,18 +204,45 @@ projeto-bi-pib-municipios/
 │       └── percentual-municipios-por-regiao.png
 │
 ├── database/
-│   └── ddl/
-│       ├── 01-criar-tabelas.sql           ← Script DDL (SQL padrão)
-│       └── 02-criar-tabelas-mysql.sql     ← Script DDL para o MySQL Workbench
+│   ├── ddl/
+│   │   ├── 01-criar-tabelas.sql           ← Script DDL (SQL padrão)
+│   │   ├── 02-criar-tabelas-mysql.sql     ← DDL do MMD para o MySQL Workbench
+│   │   └── 03-criar-staging.sql           ← DDL do banco de staging
+│   ├── etl/
+│   │   ├── 00-limpar-mmd.sql
+│   │   ├── 01-carrega-dim-regiao.sql      ← Cargas das dimensões e da fato
+│   │   ├── 02-carrega-dim-uf.sql
+│   │   ├── 03-carrega-dim-municipio.sql
+│   │   ├── 04-carrega-dim-tempo.sql
+│   │   ├── 05-carrega-fato-pib.sql
+│   │   └── 06-validacao-carga.sql
+│   └── dumps/
+│       ├── dump-staging.sql               ← Dump do banco de staging
+│       └── dump-mmd.sql                   ← Dump do banco MMD
+│
+├── python/
+│   ├── requirements.txt
+│   ├── README.md                          ← Como rodar o ETL
+│   └── etl/
+│       ├── extract.py                     ← Importação (xlsx para CSV)
+│       ├── transform.py                   ← Tratamento
+│       ├── load.py                        ← Carga (staging e MMD)
+│       ├── dump.py                        ← Geração dos dumps
+│       ├── main.py                        ← Orquestração
+│       └── config.py
 │
 ├── dados/
-│   └── PIB dos Municípios - base de dados 2010-2023.xlsx
+│   ├── PIB dos Municípios - base de dados 2010-2023.xlsx
+│   └── csv/
+│       ├── pib_municipios_fonte.csv       ← Fonte de dados em CSV
+│       ├── pib_municipios_tratado.csv
+│       └── relatorio_tratamento.txt
 │
 └── power-bi/
     └── projeto-pib-municipios.pbix    ← Adicionado quando o dashboard estiver pronto
 ```
 
-As pastas `database/ddl/`, `docs/arquitetura/` e `docs/imagens/` foram acrescentadas na Fase 2, para o script DDL, o modelo multidimensional e os gráficos do README. Novas pastas (por exemplo, para scripts de tratamento de dados) serão criadas somente quando forem realmente utilizadas.
+As pastas `database/`, `python/`, `docs/arquitetura/`, `docs/imagens/` e `dados/csv/` foram acrescentadas ao longo do projeto, para os scripts SQL, o ETL em Python, o modelo multidimensional, os gráficos do README e os CSVs. Novas pastas (por exemplo, para scripts de tratamento de dados) serão criadas somente quando forem realmente utilizadas.
 
 ---
 
@@ -255,6 +283,10 @@ Objetivo: comparar o PIB das cinco grandes regiões brasileiras (Norte, Nordeste
 1. ✅ Planejar a **Fase 1:** `01-business-understanding.md` (100%)
 
 ---
+
+**Documento Criado:** *[Preencher com a data]*
+**Versão:** 1.0
+**Status:** *[Preencher com o status atual]*
 
 *"Bom BI começa com perguntas certas!"* 🎯
 

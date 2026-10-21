@@ -50,8 +50,11 @@ projeto-bi-pib-municipios/
 │   ├── arquitetura/       ← Modelo multidimensional (PNG e MWB)
 │   └── imagens/           ← Gráficos usados no README
 ├── database/
-│   └── ddl/               ← Scripts DDL
-├── dados/                 ← Base de dados do IBGE
+│   ├── ddl/               ← Scripts DDL (MMD e staging)
+│   ├── etl/               ← Scripts SQL de carga das dimensões e da fato
+│   └── dumps/             ← Dumps dos bancos (staging e MMD)
+├── python/                ← Scripts Python do ETL (veja python/README.md)
+├── dados/                 ← Base do IBGE (xlsx) e CSVs em dados/csv/
 └── power-bi/              ← Dashboard (quando estiver pronto)
 ```
 

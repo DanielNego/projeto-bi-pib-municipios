@@ -1,0 +1,14 @@
+Registros lidos do CSV da fonte: 77965
+Nome de regiao padronizado (Centro-oeste -> Centro-Oeste): 6535 registros
+Valores nulos nos campos usados: 0
+Registros duplicados (municipio + ano) removidos: 0
+Codigos consistentes: cada municipio tem 1 nome e 1 UF; cada UF tem 1 regiao
+PQ-02 - municipios que nao aparecem em todos os 14 anos (mantidos): 5
+   - Mojuí dos Campos (PA): 11 anos, a partir de 2013
+   - Pescaria Brava (SC): 11 anos, a partir de 2013
+   - Balneário Rincão (SC): 11 anos, a partir de 2013
+   - Pinto Bandeira (RS): 11 anos, a partir de 2013
+   - Paraíso das Águas (MS): 11 anos, a partir de 2013
+PQ-03 - registros com PIB ou PIB per capita menor ou igual a zero (mantidos): 1
+   - Guamaré (RN), 2012: PIB = -19046.434
+Registros no CSV tratado: 77965
