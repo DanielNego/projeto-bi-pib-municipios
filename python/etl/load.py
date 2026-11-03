@@ -69,3 +69,5 @@ def carregar_mmd(conn):
     conn.commit()
     print("[mmd] dimensoes e fato carregadas. Conferencia da carga:")
     executar_arquivo_sql(cursor, config.PASTA_SQL_ETL / "06-validacao-carga.sql", mostrar_resultados=True)
+    print("[mmd] conferencia da tabela fato (por ano, valores negativos e teste do esquema estrela):")
+    executar_arquivo_sql(cursor, config.PASTA_SQL_ETL / "07-validacao-fato.sql", mostrar_resultados=True)

@@ -47,3 +47,4 @@ MySQL: pib_municipios (MMD): dim_regiao, dim_uf, dim_municipio, dim_tempo e fato
 - `database/etl/00-limpar-mmd.sql`: apaga o MMD para a carga poder ser repetida
 - `database/etl/01` a `05`: carga das dimensões (região, UF, município, tempo) e da fato
 - `database/etl/06-validacao-carga.sql`: conferência dos totais e dos registros órfãos
+- `database/etl/07-validacao-fato.sql`: conferência da tabela fato por ano (staging x fato), registros com valor negativo e teste do esquema estrela
