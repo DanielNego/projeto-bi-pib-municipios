@@ -40,6 +40,14 @@ A base do IBGE foi separada em 1 tabela fato (`fato_pib`) e 4 dimensões (`dim_r
 
 ![Modelo multidimensional](docs/arquitetura/02_criar_tabelas_mysql.png)
 
+## 📊 Dashboard no Power BI
+
+Primeira versão do dashboard, feita no Power BI com as tabelas do modelo multidimensional (cartões, tabelas e matriz). Na imagem, o filtro de ano está em 2023. Valores correntes, sem descontar a inflação.
+
+![Dashboard do PIB dos Municípios no Power BI](power-bi/dashboard-print.png)
+
+O arquivo do Power BI está em [`power-bi/projeto-pib-municipios.pbix`](power-bi/projeto-pib-municipios.pbix).
+
 ## 📁 Estrutura do repositório
 
 ```
@@ -55,7 +63,7 @@ projeto-bi-pib-municipios/
 │   └── dumps/             ← Dumps dos bancos (staging e MMD)
 ├── python/                ← Scripts Python do ETL (veja python/README.md)
 ├── dados/                 ← Base do IBGE (xlsx) e CSVs em dados/csv/
-└── power-bi/              ← Dashboard (quando estiver pronto)
+└── power-bi/              ← Dashboard do Power BI (.pbix e print)
 ```
 
 ## 📌 Fases do projeto
